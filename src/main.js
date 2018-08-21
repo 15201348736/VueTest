@@ -13,3 +13,7 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
+
+//index.html  ->main.js  ->App.vue
