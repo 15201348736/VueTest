@@ -9,8 +9,15 @@
         </li>
     </ul>
 
+    <button @click="deleteUser">删除</button>
   </div>
 </template>
+
+<!--
+  传值：string number boolean
+  引用：array object
+
+-->
 
 <script>
 export default {
@@ -26,8 +33,15 @@ export default {
     return {
 
     }
+  },
+  methods:{
+      deleteUser:function(){
+        this.users.pop();
+      }
+
+    }
   }
-}
+
 </script>
 
 <style scoped>
