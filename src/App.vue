@@ -28,5 +28,9 @@ export default {
 
 
 <!--3样式：解决样式-->
-<style>
+<style scoped>
+h1{
+  color:purple;
+}
+
 </style>

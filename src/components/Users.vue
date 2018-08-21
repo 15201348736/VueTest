@@ -1,5 +1,6 @@
 <template>
   <div class="users">
+    <h1>Hello Users</h1>
     <ul>
       <li v-for="user in users">{{user}}</li>
     </ul>
@@ -19,4 +20,7 @@ export default {
 </script>
 
 <style scoped>
+h1{
+    color:green;
+}
 </style>
