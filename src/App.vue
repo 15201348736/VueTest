@@ -12,11 +12,9 @@
 
 export default {
   name: 'app',
-  data()
-  {
-    return
-    {
-      title:"这是我的第一个Vue脚手架项目!"
+  data() {
+    return{
+      title: "这是我的第一个Vue脚手架项目!"
     }
   }
 
@@ -26,5 +24,4 @@ export default {
 
 <!--3样式：解决样式-->
 <style>
-
 </style>
