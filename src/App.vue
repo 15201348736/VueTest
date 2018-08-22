@@ -1,11 +1,13 @@
 <!--1模板：html结构-->
 <template>
   <div id="app">
-    <app-header v-on:titleChanged = "updateTitle($event)"
-    v-bind:title = "title"></app-header>
-    <users v-bind:users = "users"></users>
-    <users v-bind:users = "users"></users>
-    <app-footer v-bind:title = "title"></app-footer>
+    <ul>
+      <!--li><a href = "/">Home</a></li>
+      <li><a href = "/helloworld">Hello</a></li-->
+      <li><router-link to = "/">Home</router-link></li>
+      <li><router-link to = "/helloworld">Hello</router-link></li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -21,30 +23,9 @@ export default {
   name: 'app',
   data() {
     return {
-      users: [
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false},
-        {name:"Henry",position:"Web开发",show:false}
-      ],
-      title:" 传递的是一个值，（number  string  boolean）"
+
     }
   },
-  methods:{
-    updateTitle(title){
-      this.title = title;
-    }
-  },
-  components:{
-    "users":Users,
-    "app-header":Header,
-    "app-footer":Footer
-  }
 
 }
 </script>

@@ -22,8 +22,8 @@ export default {
       //this.title = "  changed!";
       this.$emit("titleChanged", "  子向父组件传值！")
     }
-  },
-  beforeCreate: function () {
+  }
+  /*beforeCreate: function () {
     alert("组件实例化之前执行的函数！");
   },
   Created: function () {
@@ -46,7 +46,7 @@ export default {
   },
   destroyed: function () {
     alert("组件销毁！");
-  }
+  }*/
 }
 </script>
 
